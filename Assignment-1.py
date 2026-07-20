@@ -1,22 +1,3 @@
-"""
-AI-ML Assignment 1
-Medical Insurance Cost Prediction using Multiple Linear Regression
-
-Dataset: Medical Cost Personal Insurance Dataset (Kaggle)
-https://www.kaggle.com/datasets/mirichoi0218/insurance
-
-NOTE ON DATA:
-This environment has no internet access, so the real Kaggle CSV could not
-be downloaded directly here. The script below FIRST tries to load a local
-file named 'insurance.csv' (the actual Kaggle file — place it in the same
-folder as this script / notebook and it will be used automatically).
-If that file is not found, it falls back to generating a synthetic dataset
-with the same columns and the same well-known statistical relationships
-(age, bmi, and especially smoking status strongly driving charges) purely
-so every task below can be demonstrated end-to-end. Before submitting,
-download insurance.csv from the Kaggle link above and place it next to
-this script so the real data is used.
-"""
 
 import os
 import numpy as np
@@ -37,11 +18,10 @@ np.random.seed(RANDOM_STATE)
 # Task 1: Data Understanding
 # --------------------------------------------------------------------------
 
-DATA_PATH = "insurance.csv"
+DATA_PATH = "insurance.csv or your specific path for data"
 
 def load_dataset(path=DATA_PATH, n_synthetic=1338):
-    """Load the real Kaggle insurance.csv if present, else build a
-    synthetic stand-in with identical columns and realistic relationships."""
+  
     if os.path.exists(path):
         print(f"Loading real dataset from '{path}'")
         return pd.read_csv(path), False
