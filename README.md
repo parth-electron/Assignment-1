@@ -41,8 +41,12 @@ dataset with the same schema so the pipeline still runs end-to-end for demonstra
 4. **Model Evaluation** — computed MAE, MSE, and R², and plotted actual vs. predicted charges.
 
 ## Results
-
-| Metric | Value | ----> [metrics_file][metrics.txt]
+| Metric | Value |
+|---|---|
+| MAE | 4186.51 |
+| MSE | 33635210.43 |
+| RMSE | 5799.59 |
+| R2 | 0.7833 |
 
 
 
