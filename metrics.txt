@@ -1,0 +1,5 @@
+MAE,4186.51
+MSE,33635210.43
+RMSE,5799.59
+R2,0.7833
+synthetic,False
