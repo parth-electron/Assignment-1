@@ -42,14 +42,9 @@ dataset with the same schema so the pipeline still runs end-to-end for demonstra
 
 ## Results
 
-| Metric | Value |
-|---|---|
-| MAE | 3,219.59 |
-| MSE | 19,403,343.13 |
-| R² | 0.8791 |
+| Metric | Value | ----> [metrics_file][metrics.txt]
 
-*(Values above come from a run of the pipeline; see the notes on the dataset above — if you
-run this against the real Kaggle file your numbers will differ slightly.)*
+
 
 **Observations:**
 - Smoking status is by far the strongest driver of predicted charges — smokers are charged
